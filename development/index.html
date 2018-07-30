@@ -11,12 +11,11 @@
 <body class="container-fluid">
 	<header class="header row">
 		<div class="header-logo col-md-2">
-			<img src="#" alt="" class="header-logo__picture"/>
-			<h1 class="header-logo__name">Nutickets</h1>
+			<a href="/"><img src="images/logo.png" alt="Logo" class="header-logo__picture"/></a>
 		</div>
 		<nav class="main-menu col-md-10">
 			<ul class="main-menu__items">
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Dashboard</li>
+				<li class="main-menu__item"><img src="images/dashboard.png" class="main-menu__item--icon-position"> Dashboard</li>
 				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Events</li>
 				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Sales</li>
 				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Promotion</li>
@@ -31,7 +30,10 @@
 	<main class="wrapper row">
 		<section class="side-bar col-md-2">
 			<nav class="side-bar-menu">
-				<h3 class="side-bar-menu__title">Events</h3>
+				<h3 class="side-bar-menu__title">
+					Events
+					<span class="side-bar-menu__title-logo"></span>
+				</h3>
 				<ul class="side-bar-menu__items">
 					<li class="side-bar-menu__item">Add Events</li>
 					<li class="side-bar-menu__item">Manage Events</li>
@@ -56,7 +58,7 @@
 			</nav>
 
 			<div class="content-header">
-				<img src="#" alt="" class="content-header-image">
+				<img src="images/headerimage.png" alt="" class="content-header-image">
 				<div class="content-header-table">
 					<h4 class="content-header-table__title">HYPER Festival LUNCH PARTY</h4>
 					<span class="content-header-table__dialog">Open dialog</span>
@@ -91,12 +93,12 @@
 				</div>
 			</div>
 
-			<div class="components">
-				<div class="box box--half">
-					<h2 class="box__title">
-						Best selling boxs
+			<div class="grid">
+				<div class="grid-item grid-item--half">
+					<h2 class="grid-item__title">
+						Best selling grid-items
 					</h2>
-					<ul class="box__content">
+					<ul class="grid-item__content">
 						<li class="ticket">
 							<img src="" alt="" class="ticket__image">
 							<h4 class="ticket__title">
@@ -110,9 +112,95 @@
 						</li>
 					</ul>
 				</div>
-				
-				<div class="box box--half">
-					dsfdsfds
+
+				<div class="grid-item grid-item--half">
+					<h2 class="grid-item__title">
+						Best selling grid-items
+					</h2>
+					<ul class="grid-item__content">
+						<li class="ticket">
+							<img src="" alt="" class="ticket__image">
+							<h4 class="ticket__title">
+								Lorem
+							</h4>
+							<button class="ticket__edit">Edit</button>
+							<button class="ticket__view-sales">View sales</button>
+							<span class="ticket__sold-date">2012</span>
+							<span class="ticket__statistics">20% fds</span>
+							<button class="ticket__info">i</button>
+						</li>
+					</ul>
+					<ul class="grid-item__content">
+							<li class="ticket">
+								<img src="" alt="" class="ticket__image">
+								<h4 class="ticket__title">
+									Lorem
+								</h4>
+								<button class="ticket__edit">Edit</button>
+								<button class="ticket__view-sales">View sales</button>
+								<span class="ticket__sold-date">2012</span>
+								<span class="ticket__statistics">20% fds</span>
+								<button class="ticket__info">i</button>
+							</li>
+						</ul>
+				</div>
+
+				<div class="grid-item grid-item--half">
+					<h2 class="grid-item__title">
+						Best selling grid-items
+					</h2>
+					<ul class="grid-item__content">
+						<li class="ticket">
+							<img src="" alt="" class="ticket__image">
+							<h4 class="ticket__title">
+								Lorem
+							</h4>
+							<button class="ticket__edit">Edit</button>
+							<button class="ticket__view-sales">View sales</button>
+							<span class="ticket__sold-date">2012</span>
+							<span class="ticket__statistics">20% fds</span>
+							<button class="ticket__info">i</button>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="grid-item grid-item--half">
+					<h2 class="grid-item__title">
+						Best selling grid-items
+					</h2>
+					<ul class="grid-item__content">
+						<li class="ticket">
+							<img src="" alt="" class="ticket__image">
+							<h4 class="ticket__title">
+								Lorem
+							</h4>
+							<button class="ticket__edit">Edit</button>
+							<button class="ticket__view-sales">View sales</button>
+							<span class="ticket__sold-date">2012</span>
+							<span class="ticket__statistics">20% fds</span>
+							<button class="ticket__info">i</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="grid-item grid-item--full">
+					<h2 class="grid-item__title">
+						Best selling grid-items
+					</h2>
+					<ul class="grid-item__content">
+						<li class="ticket">
+							<img src="" alt="" class="ticket__image">
+							<h4 class="ticket__title">
+								Lorem
+							</h4>
+							<button class="ticket__edit">Edit</button>
+							<button class="ticket__view-sales">View sales</button>
+							<span class="ticket__sold-date">2012</span>
+							<span class="ticket__statistics">20% fds</span>
+							<button class="ticket__info">i</button>
+						</li>
+					</ul>
 				</div>
 				
 				<div class="box box--full">
@@ -130,8 +218,10 @@
 	</main>
 
 	<footer></footer>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
