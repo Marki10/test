@@ -106,33 +106,121 @@
 }
 
 .content-header {
+	display: flex;
 	width: 100%;
 }
 
 .content-header-image {
-
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: #453;
 }
 
 .content-header-table {
-	&__title {
+	display: inline-block;
+	padding: .8rem;
 
+	&__title {
+		display: inline-block;
+		color: aqua;
+	}
+
+	&__dialog {
+		background: #453;
+		color: aliceblue;
+		font-size: .8rem;
+		padding: 3px 5px 3px 20px;
+		border-radius: 5px;
 	}
 
 	&__row {
-
+		display: flex;
+		width: 550px;
 	}
 
 	&__col {
+		display: inline-block;
 
+		&--small {
+			width: 12.5%;
+		}
+
+		&--large {
+			width: 37.5%;
+		}
 	}
 }
 
 .components {
-
+	display: flex;  
+  	flex-flow: row wrap;
+	padding: 30px;
 }
 
-.tickets {
+.components > * {
+	padding: 10px;
+	flex: 1 100%;
+}
 
+.box {
+	background: #543;
+	border: 1px solid #999;
+
+	&__content {
+		padding: 0;
+		margin: 0;
+	}
+
+	&__title {
+
+	}
+
+	&--wrapper {
+		border: 1px solid #777;
+		box-shadow: #777 5px 5px;
+	}
+
+	&--half {
+		max-width: 50%;
+		flex: 1 auto;
+	}
+
+	&--full {
+		
+	}
+}
+.ticket {
+	list-style-type: none;
+
+	&__image {
+		width: 70px;
+		height: 70px;
+		background: red;
+		display: inline-block;
+	}
+
+	&__title {
+		display: inline-block;
+		margin: 0;
+	}
+
+	&__edit {
+		
+	}
+
+	&__view-sales {
+
+	}
+
+	&__info {
+		float: right;
+		background: #aaa;
+		border: 0;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+	}
 }
 
 footer {
