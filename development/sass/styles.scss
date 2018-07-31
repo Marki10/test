@@ -1,6 +1,16 @@
-@import 'base/variables';
-@import 'base/mixins';
-@import 'images';
+@import 'variables';
+@import 'mixins';
 
 @import 'grid';
 
+@import 'header';
+@import 'content';
+@import 'base';
+@import 'side-bar';
+@import 'sub-menu';
+@import 'best-selling';
+@import 'reports';
+@import 'quick-settings';
+@import 'stats';
+
+@import 'footer';

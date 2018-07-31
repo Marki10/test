@@ -1,0 +1,33 @@
+.stats-box {
+	background: $base-blue;
+	color: $base-white;
+
+	&__wrapper {
+		padding: 10px;
+		display: flex;
+		margin: 0;
+	}
+
+	&__item {
+		flex-grow: 1;
+		list-style-type: none;
+		padding: 20px;
+		text-align: center;
+		box-sizing: border-box;
+		border-right: 2px solid;
+		
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	&__main-stat{
+		margin: 5px;
+		font-size: 2.5rem;
+	}
+
+	&__sub-stat {
+		font-size: 2rem;
+		color: $light-blue;
+	}
+}

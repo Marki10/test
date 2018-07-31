@@ -1,0 +1,38 @@
+.sub-menu {
+	display: flex;
+	background: $button-background;
+	border-bottom: 1px solid $base-border-color;
+
+	&__title {
+		background: $info-orange;
+		color: $base-white;
+		display: inline-block;
+		padding: 20px 28px;
+		font-size: 1.3em;
+		font-weight: normal;
+		letter-spacing: -1px;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__items {
+		display: flex;
+		padding: 0;
+		margin-bottom: -1px;
+		color: $base-blue;
+	}
+
+	&__item {
+		display: inline-block;
+		list-style-type: none;
+		padding: 20px;
+		margin: 0;
+        border: 1px solid $base-border-color;
+        cursor: pointer;
+		@include transition(.5s);
+        
+        &:hover {
+            background: $base-border-color; 
+        }
+	}
+}

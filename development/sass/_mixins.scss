@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+@mixin transition($duration) {
+	-webkit-transition: all $duration ease;
+	-moz-transition: all $duration ease;
+	-o-transition: all $duration ease;
+	transition: all $duration ease;
+}
+
+@mixin base-box-shadow() {
+	box-shadow: 4px 4px #eeeeee;
+}

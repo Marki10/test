@@ -9,219 +9,34 @@
 	<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body class="container-fluid">
-	<header class="header row">
-		<div class="header-logo col-md-2">
-			<a href="/"><img src="images/logo.png" alt="Logo" class="header-logo__picture"/></a>
+	<div class="dialog-window" id="dialog-window">
+		<div class="dialog-window__inner">
+			Close test dialog by click on anything, or pressing ESC.
 		</div>
-		<nav class="main-menu col-md-10">
-			<ul class="main-menu__items">
-				<li class="main-menu__item"><img src="images/dashboard.png" class="main-menu__item--icon-position"> Dashboard</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Events</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Sales</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Promotion</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Shops</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>HR Managment</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>Finacials</li>
-				<li class="main-menu__item"><i class="fa fa-2x fa-500px"></i>My Account</li>
-			</ul>
-		</nav>
-	</header>
+	</div>
+	<header class="header row" id="header"></header>
 
 	<main class="wrapper row">
-		<section class="side-bar col-md-2">
-			<nav class="side-bar-menu">
-				<h3 class="side-bar-menu__title">
-					Events
-					<span class="side-bar-menu__title-logo"></span>
-				</h3>
-				<ul class="side-bar-menu__items">
-					<li class="side-bar-menu__item">Add Events</li>
-					<li class="side-bar-menu__item">Manage Events</li>
-					<li class="side-bar-menu__item">Ticket Templates</li>
-					<li class="side-bar-menu__item">Event Templates</li>
-					<li class="side-bar-menu__item">Venues</li>
-					<li class="side-bar-menu__item">Reports</li>
-				</ul>
-			</nav>
-		</section>
+		<section class="side-bar col-md-2" id="side-bar"></section>
 		<section class="content col-md-10">
-
-			<nav class="sub-menu">
-				<h3 class="sub-menu__title">INFORMATION</h3>
-				<ul class="sub-menu__items">
-					<li class="sub-menu__item">Reports</li>
-					<li class="sub-menu__item">Data Captures</li>
-					<li class="sub-menu__item">Web Analitycs</li>
-					<li class="sub-menu__item">Email Settings</li>
-					<li class="sub-menu__item">Apperance</li>
-				</ul>
-			</nav>
-
-			<div class="content-header">
-				<img src="images/headerimage.png" alt="" class="content-header-image">
-				<div class="content-header-table">
-					<h4 class="content-header-table__title">HYPER Festival LUNCH PARTY</h4>
-					<span class="content-header-table__dialog">Open dialog</span>
-					<div class="content-header-table__row">
-						<div class="content-header-table__col content-header-table__col--small">
-							When
-						</div>
-						<div class="content-header-table__col content-header-table__col--large">
-							29 July 2016
-						</div>
-						<div class="content-header-table__col content-header-table__col--large">
-							Tickets sold
-						</div>
-						<div class="content-header-table__col content-header-table__col--small">
-							12,642
-						</div>	
-					</div>
-					<div class="content-header-table__row">
-						<div class="content-header-table__col content-header-table__col--small">
-							Where
-						</div>
-						<div class="content-header-table__col content-header-table__col--large">
-							Hype Expo Manchester
-						</div>
-						<div class="content-header-table__col content-header-table__col--large">
-							Subsribe to list
-						</div>
-						<div class="content-header-table__col content-header-table__col--small">
-							648
-						</div>	
-					</div>
-				</div>
-			</div>
-
+			<nav class="sub-menu" id="sub-menu"></nav>
+			<div class="content-header" id="content-header"></div>
 			<div class="grid">
-				<div class="grid-item grid-item--half">
-					<h2 class="grid-item__title">
-						Best selling grid-items
-					</h2>
-					<ul class="grid-item__content">
-						<li class="ticket">
-							<img src="" alt="" class="ticket__image">
-							<h4 class="ticket__title">
-								Lorem
-							</h4>
-							<button class="ticket__edit">Edit</button>
-							<button class="ticket__view-sales">View sales</button>
-							<span class="ticket__sold-date">2012</span>
-							<span class="ticket__statistics">20% fds</span>
-							<button class="ticket__info">i</button>
-						</li>
-					</ul>
-				</div>
-
-				<div class="grid-item grid-item--half">
-					<h2 class="grid-item__title">
-						Best selling grid-items
-					</h2>
-					<ul class="grid-item__content">
-						<li class="ticket">
-							<img src="" alt="" class="ticket__image">
-							<h4 class="ticket__title">
-								Lorem
-							</h4>
-							<button class="ticket__edit">Edit</button>
-							<button class="ticket__view-sales">View sales</button>
-							<span class="ticket__sold-date">2012</span>
-							<span class="ticket__statistics">20% fds</span>
-							<button class="ticket__info">i</button>
-						</li>
-					</ul>
-					<ul class="grid-item__content">
-							<li class="ticket">
-								<img src="" alt="" class="ticket__image">
-								<h4 class="ticket__title">
-									Lorem
-								</h4>
-								<button class="ticket__edit">Edit</button>
-								<button class="ticket__view-sales">View sales</button>
-								<span class="ticket__sold-date">2012</span>
-								<span class="ticket__statistics">20% fds</span>
-								<button class="ticket__info">i</button>
-							</li>
-						</ul>
-				</div>
-
-				<div class="grid-item grid-item--half">
-					<h2 class="grid-item__title">
-						Best selling grid-items
-					</h2>
-					<ul class="grid-item__content">
-						<li class="ticket">
-							<img src="" alt="" class="ticket__image">
-							<h4 class="ticket__title">
-								Lorem
-							</h4>
-							<button class="ticket__edit">Edit</button>
-							<button class="ticket__view-sales">View sales</button>
-							<span class="ticket__sold-date">2012</span>
-							<span class="ticket__statistics">20% fds</span>
-							<button class="ticket__info">i</button>
-						</li>
-					</ul>
-				</div>
-
-
-				<div class="grid-item grid-item--half">
-					<h2 class="grid-item__title">
-						Best selling grid-items
-					</h2>
-					<ul class="grid-item__content">
-						<li class="ticket">
-							<img src="" alt="" class="ticket__image">
-							<h4 class="ticket__title">
-								Lorem
-							</h4>
-							<button class="ticket__edit">Edit</button>
-							<button class="ticket__view-sales">View sales</button>
-							<span class="ticket__sold-date">2012</span>
-							<span class="ticket__statistics">20% fds</span>
-							<button class="ticket__info">i</button>
-						</li>
-					</ul>
-				</div>
-
-				<div class="grid-item grid-item--full">
-					<h2 class="grid-item__title">
-						Best selling grid-items
-					</h2>
-					<ul class="grid-item__content">
-						<li class="ticket">
-							<img src="" alt="" class="ticket__image">
-							<h4 class="ticket__title">
-								Lorem
-							</h4>
-							<button class="ticket__edit">Edit</button>
-							<button class="ticket__view-sales">View sales</button>
-							<span class="ticket__sold-date">2012</span>
-							<span class="ticket__statistics">20% fds</span>
-							<button class="ticket__info">i</button>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="box box--full">
-					dsfdsfds
-				</div>
-				<div class="box box--half">
-					<Lorem>fsdfssdffsd</Lorem>
-				</div>
-				
-				<div class="box box--full">
-					dsfdsfds
-				</div>
+				<div class="grid-item grid-item--half" id="best-selling-component"></div>
+				<div class="grid-item grid-item--half" id="stats-component"></div>
+				<div class="grid-item grid-item--half" id="reports-component"></div>
+				<div class="grid-item grid-item--half" id="quick-setting-component"></div>
+				<div class="grid-item grid-item--half" id="attendance-component"></div>
+				<div class="grid-item grid-item--full" id="facebook-component"></div>
 			</div>
 		</section>
 	</main>
 
-	<footer></footer>
-	
+	<footer id="footer" class="footer"></footer>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+.header {
+	display: flex;
+	background: $main-green;
+}
+.header-logo {
+	&__picture {
+		margin-top: 23px;
+		display: block;
+		width: 250px;
+	}
+}
+
+.main-menu {
+	width: 100%;
+	padding: 0;
+
+	&__items {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		list-style-type: none;
+		flex-grow: 1;
+    	text-align: center;
+		padding: 2rem 0;
+		color: $base-white;
+		font-weight: 400;
+		cursor: pointer;
+		
+		&:hover {
+			background: $main-menu-hover;
+		}
+
+		&--icon-position {
+			width: 2rem;
+			margin-top: -7px;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+
+.bst-box {
+	position: relative;
+	padding: 10px 10px 10px 95px;
+	border: 1px solid #fefefe;
+	box-sizing: border-box;
+  
+	&:nth-child(odd) {
+		background: $light-background-gray;
+	}
+	
+	&__title {
+		margin-top: 0;
+		margin-bottom: 10px;
+		color: $font-gray;
+	}
+
+	&__view,
+	&__edit {
+		border: 0;
+		padding: 8px 20px;
+	}
+
+	&__view {
+		margin-left: 5px
+	}
+
+	&__upcoming,
+	&__desription,
+	&__info-button {
+		float: right;
+	}
+
+	&__desription {
+		color: $font-gray;
+	}
+
+	&__upcoming {
+		font-size: 1rem;
+		margin-top: 18px;
+
+		&--aqua-font {
+			color: $base-blue;
+		}
+
+		&--orange-font {
+			color: $info-orange;
+		}
+	}
+
+	&__info-button {
+		width: 40px;
+		height: 40px;
+		margin-top: 19px;
+		margin-left: 5px;
+		background: url(../images/infobutton.png);
+		background-repeat: no-repeat;
+		background-size: 30px 30px;
+		background-position: 50% 50%;
+		position: relative;
+		cursor: pointer;
+	}
+}
+
+.promo-popup {
+	position: absolute;
+    background: #f29323;
+    border: 2px solid #fff;
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    top: 54px;
+    left: -234px;
+
+	&::after,
+	&::before {
+		bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&::after {
+		border-color: rgba(242,147,35,0);
+		border-bottom-color: #f29323;
+		border-width: 10px;
+		margin-left: 95px;
+	}
+
+	&__close {
+
+	}
+
+	&__title {
+
+	}
+
+	&__add {
+
+	}
+}
+
+bst-box-icons {
+	background-size: 100%;
+	width: 75px;
+	height: 75px;
+	display: block;
+	position: absolute;
+	left: 5px;
+	top: 15px;
+}
+
+.adult-general {
+	background-image: url(../images/plusup.png);
+}
+.child-tickets {
+	background-image: url(../images/minusdown.png);
+}
+.child-tickets-hidden {
+	background-image: url(../images/eyeicon.png);
+}
+.not-on-sale {
+	background-image: url(../images/xbutton.png);
+}
+.upcoming-sale {
+	background-image: url(../images/calendar.png);
+}

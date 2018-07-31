@@ -1,208 +1,3 @@
-$base-white: #ffffff;
-$base-border-color: #e0e0e0;
-$base-blue: #14b2cc;
-
-$main-green: #0e798b;
-$main-menu-hover: #0b5c6a;
-
-$side-bar-background: #f1f8f9;
-$side-bar-hover-color: #08939f;
-
-$info-orange: #f29323;
-
-$button-background: #f6f6f6;
-
-@mixin transition($duration) {
-	-webkit-transition: all $duration ease;
-	-moz-transition: all $duration ease;
-	-o-transition: all $duration ease;
-	transition: all $duration ease;
-}
-
-@mixin base-box-shadow() {
-	box-shadow: 4px 4px #eeeeee;
-}
-
-
-.header {
-	display: flex;
-	background: $main-green;
-}
-.header-logo {
-	&__picture {
-		margin-top: 27px;
-		display: block;
-		width: 250px;
-	}
-}
-
-.main-menu {
-	width: 100%;
-	padding: 0;
-
-	&__title {
-
-	}
-
-	&__items {
-		display: flex;
-		margin: 0;
-		padding: 0;
-	}
-
-	&__item {
-		list-style-type: none;
-		flex-grow: 1;
-    	text-align: center;
-		padding: 30px 0;
-		color: $base-white;
-		font-weight: 400;
-		cursor: pointer;
-		
-		&:hover {
-			background: $main-menu-hover;
-		}
-
-		&--icon-position {
-			width: 30px;
-			margin-top: -7px;
-		}
-	}
-}
-
-.wrapper {
-	min-height: 100%;
-}
-
-.side-bar {
-	padding: 0;
-	margin: 0;
-	background: $side-bar-background;
-	min-height: 100%;
-	border-right: 1px solid $base-border-color;
-}
-
-.side-bar-menu {
-	&__title {
-		padding: 20px;
-		color: $main-green;
-	}
-
-	&__title-logo {
-		background: url(../images/eventsbig.png);
-		width: 40px;
-		height: 40px;
-		display: block;
-		position: absolute;
-		background-size: 40px;
-		right: 15px;
-		top: 20px;
-	}
-
-	&__items {
-		padding: 0;
-	}
-
-	&__item {
-		list-style-type: none;
-		padding: 10px 0 10px 20px;
-		border-left: 10px solid transparent;
-		@include transition(.5s);
-		cursor: pointer;
-
-		&:hover {
-			border-left: 10px solid $side-bar-hover-color;
-			color: $side-bar-hover-color;
-		}
-	}
-}
-
-
-.content {
-	padding: 0;
-}
-
-.sub-menu {
-	display: flex;
-	background: $button-background;
-	border-bottom: 1px solid $base-border-color;
-
-	&__title {
-		background: $info-orange;
-		color: $base-white;
-		display: inline-block;
-		padding: 20px 28px;
-		font-size: 1.3em;
-		font-weight: normal;
-		letter-spacing: -2px;
-		margin: 0;
-	}
-
-	&__items {
-		display: flex;
-		padding: 0;
-		margin-bottom: -1px;
-		color: $base-blue;
-	}
-
-	&__item {
-		display: inline-block;
-		list-style-type: none;
-		padding: 20px;
-		margin: 0;
-		border: 1px solid $base-border-color;
-	}
-}
-
-.content-header {
-	display: flex;
-	width: 100%;
-	border-bottom: 1px solid $base-border-color;
-	padding: 10px;
-}
-
-.content-header-image {
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	@include base-box-shadow();
-}
-
-.content-header-table {
-	display: inline-block;
-	padding: .8rem .8rem 0 .8rem;
-
-	&__title {
-		display: inline-block;
-		color: $base-blue;
-	}
-
-	&__dialog {
-		background: #453;
-		color: aliceblue;
-		font-size: .8rem;
-		padding: 3px 5px 3px 20px;
-		border-radius: 5px;
-	}
-
-	&__row {
-		display: flex;
-		width: 550px;
-	}
-
-	&__col {
-		display: inline-block;
-
-		&--small {
-			width: 12.5%;
-		}
-
-		&--large {
-			width: 37.5%;
-		}
-	}
-}
-
 .grid {
 	width: 100%;
 	padding: 30px;
@@ -222,7 +17,7 @@ $button-background: #f6f6f6;
 	}
 
 	&__title {
-		padding: 10px;
+		padding: 25px;
 		border-bottom: 1px solid $base-border-color;
 		background-color: $button-background;
 		background-image: url(../images/header-shadow.png);
@@ -230,6 +25,7 @@ $button-background: #f6f6f6;
     	background-repeat: no-repeat;
 		background-size: 43% 100%;
 		color: $base-blue;
+		margin: 0;
 	}
 
 	&--wrapper {
@@ -239,7 +35,6 @@ $button-background: #f6f6f6;
 
 	&--half {
 		max-width: 45%;
-		flex: 1 auto;
 
 		&:last-child {
 			margin-right: 0;
@@ -249,40 +44,4 @@ $button-background: #f6f6f6;
 	&--full {
 		width: 92%;
 	}
-}
-.ticket {
-	list-style-type: none;
-
-	&__image {
-		width: 70px;
-		height: 70px;
-		background: red;
-		display: inline-block;
-	}
-
-	&__title {
-		display: inline-block;
-		margin: 0;
-	}
-
-	&__edit {
-		
-	}
-
-	&__view-sales {
-
-	}
-
-	&__info {
-		float: right;
-		background: #aaa;
-		border: 0;
-		border-radius: 50%;
-		width: 40px;
-		height: 40px;
-	}
-}
-
-footer {
-
 }

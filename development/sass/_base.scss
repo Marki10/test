@@ -1,0 +1,25 @@
+html,
+body {
+    font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: $light-gray;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+/*
+ * Utils
+ */
+ 
+.light-font-color {
+	color: $light-gray;
+}
+
+.text-right {
+	text-align: right;
+}
