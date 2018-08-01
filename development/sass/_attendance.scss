@@ -1,0 +1,54 @@
+.atten-box {
+	position: relative;
+	padding: 20px;
+	border: 1px solid #fefefe;
+	box-sizing: border-box;
+  
+	&:nth-child(odd) {
+		background: $light-background-gray;
+	}
+	
+	&__title {
+		font-weight: bold;
+        margin: 0;
+        font-size: 1.1rem;
+		color: $font-gray;
+	}
+
+	&__view,
+	&__order-details {
+		border: 0;
+		padding: 8px 20px;
+	}
+
+	&__upcoming,
+	&__applied,
+	&__email {
+        float: right;
+        cursor: pointer;
+	}
+
+	&__applied {
+		color: $font-gray;
+	}
+
+	&__upcoming {
+		font-size: 1rem;
+		margin-top: 18px;
+	}
+
+    email {
+        color: $base-blue;
+        position: relative;
+
+        &::after {
+            content: "\2023";
+            display: block;
+            top: 11px;
+            right: 2px;
+            position: absolute;
+            font-size: 2rem;
+            transform: rotate(90deg);
+        }
+    } 
+}

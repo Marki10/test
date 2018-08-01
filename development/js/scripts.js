@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-    /* 
-    * Templates
-    */
+    /* Templates */
     $( "#header" ).load( "./templates/header.html" );
 
     $( "#side-bar" ).load( "./templates/side-bar.html" );
@@ -25,11 +23,8 @@ $(document).ready(function(){
             loadChart();
         }
     });
-    /******* */
 
-    /*
-    * Dialog
-    */
+    /* Dialog */
     $( "body" ).on( "click", "#open-dialog", function() {
         $("#dialog-window").css("display", "block");
     });
@@ -43,10 +38,13 @@ $(document).ready(function(){
             $("#dialog-window").css("display", "none");
         }
     });
-    /*********** */
-
-    $("#info-button").on("click", function(){
-        alert("info");
+    
+    /*  Promo  */
+    $( "body" ).on( "click", "#info-button", function() {
+        $("#promo-popup").css("display", "block");
+    });
+    $( "body" ).on( "click", "#promo-close", function() {
+        $("#promo-popup").css("display", "none");
     });
 
     function loadChart() {
