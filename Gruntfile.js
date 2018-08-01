@@ -110,15 +110,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // html lint task
-
-    validation: {
-      all: {
-        src: ['development/**/*.html', '!development/vendor/**/*.html', '!development/docs/**/*.html']
-      }
-
-    },
-
     // clean task
 
     clean: {

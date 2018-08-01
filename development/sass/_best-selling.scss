@@ -1,7 +1,7 @@
 
 .bst-box {
 	position: relative;
-	padding: 10px 10px 10px 95px;
+	padding: 15px 20px 15px 100px;
 	border: 1px solid #fefefe;
 	box-sizing: border-box;
   
@@ -23,7 +23,7 @@
 	}
 
 	&__view {
-		margin-left: 5px
+		margin-left: 5px;
 	}
 
 	&__upcoming,
@@ -34,10 +34,11 @@
 
 	&__desription {
 		color: $font-gray;
+		font-weight: 500;
 	}
 
 	&__upcoming {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin-top: 18px;
 
 		&--aqua-font {
@@ -75,7 +76,8 @@
     left: 330px;
 	border: 1px solid $base-white;
 	color: $base-white;
-	text-shadow: $base-gray 1px 1px;
+	text-shadow: 1px 1px rgba(0,0,0, 0.5);
+	box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.3);
 
 	&::after,
 	&::before {
@@ -91,7 +93,7 @@
 
 	&::after {
 		border-color: rgba(242,147,35,0);
-		border-bottom-color: #f29323;
+		border-bottom-color: $info-orange;
 		border-width: 10px;
 		margin-left: 95px;
 	}
@@ -100,7 +102,7 @@
 		position: absolute;
 		width: 26px; 
 		height: 15.01px;
-		background-color: #ffffff;
+		background-color: $base-white;
 		margin: 7.51px 0;
 		border-left: solid 3px $info-orange;
 		border-right: solid 3px $info-orange;
@@ -108,6 +110,7 @@
 		right: -9px;
 		color: $info-orange;
 		cursor: pointer;
+		box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.3);
 
 		&::before,
 		&::after {
@@ -144,16 +147,15 @@
 		}
 	}
 
-	&__title {
-
-	}
-
 	&__add {
 		float: right;
 		background: $base-white;
 		border-radius: 5px;
+		padding: 5px 10px;
+		margin-top: 20px;
 		border: 0;
 		color: $info-orange;
+		font-size: 1.3rem;
 	}
 }
 
@@ -163,7 +165,7 @@ bst-box-icons {
 	height: 75px;
 	display: block;
 	position: absolute;
-	left: 5px;
+	left: 10px;
 	top: 15px;
 }
 

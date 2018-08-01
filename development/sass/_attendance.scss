@@ -10,7 +10,7 @@
 	
 	&__title {
 		font-weight: bold;
-        margin: 0;
+		margin: 0 0 5px 0;
         font-size: 1.1rem;
 		color: $font-gray;
 	}
@@ -21,7 +21,6 @@
 		padding: 8px 20px;
 	}
 
-	&__upcoming,
 	&__applied,
 	&__email {
         float: right;
@@ -32,20 +31,20 @@
 		color: $font-gray;
 	}
 
-	&__upcoming {
-		font-size: 1rem;
-		margin-top: 18px;
+	&__email {
+		font-weight: normal;
 	}
 
     email {
         color: $base-blue;
-        position: relative;
+		position: relative;
+		margin-left: 20px;
 
         &::after {
             content: "\2023";
             display: block;
-            top: 11px;
-            right: 2px;
+			top: -9px;
+			right: -15px;
             position: absolute;
             font-size: 2rem;
             transform: rotate(90deg);

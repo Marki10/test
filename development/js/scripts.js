@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     /* Templates */
-    $( "#header" ).load( "./templates/header.html" );
+    $( "#header" ).load( "../templates/header.html" );
 
     $( "#side-bar" ).load( "./templates/side-bar.html" );
 
@@ -14,13 +14,14 @@ $(document).ready(function(){
     $( "#attendance-component" ).load( "./templates/attendance-component.html" );
     $( "#facebook-component" ).load( "./templates/facebook-component.html" );
     
-    $( "#footer" ).load( "./templates/footer.html", function(response, status, xhr) {
+    $( "#footer" ).load( "./templates/footer.html", function(status) {
         if ( status == "success" ) {
+            loadChart();
+
             $('.grid').masonry({
                 itemSelector: '.grid-item'
             }); 
 
-            loadChart();
         }
     });
 
@@ -47,6 +48,14 @@ $(document).ready(function(){
         $("#promo-popup").css("display", "none");
     });
 
+    /* Reports */
+    $( "body" ).on( "click", "#tickets", function() {
+        $("#chartContainer").css("display", "none");
+    });
+    $( "body" ).on( "click", "#sales", function() {
+        $("#chartContainer").css("display", "block");
+    });
+
     function loadChart() {
         var options = {
             exportEnabled: true,
@@ -59,6 +68,7 @@ $(document).ready(function(){
                 type: "pie",
                 toolTipContent: "<b>{name}</b>",
                 indexLabel: "{name}",
+                indexLabelFontColor: "white",
                 indexLabelPlacement: "inside",
                 dataPoints: [
                     { y: 33, name: "33%", color: "#f4c63d" },

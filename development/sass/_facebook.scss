@@ -21,12 +21,13 @@
     position: relative;
     padding-left: 50px;
     margin-bottom: 12px;
-    cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color: $base-blue;
+    cursor: pointer;
 
     input {
         position: absolute;
@@ -52,13 +53,13 @@
     }
 
     &:hover input ~ .checkmark {
-        background-color: #ccc;
+        background-color: $light-background-gray;
     }
 
     input:checked ~ .checkmark:after {
         display: block;
-        background-color: #14b2cc;
-        border: 3px solid #fff;
+        background-color: $base-blue;
+        border: 3px solid $base-white;
         padding: 5px;
         border-radius: 50%;
         margin-left: .5px;

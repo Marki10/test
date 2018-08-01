@@ -28,6 +28,7 @@
 		color: $base-white;
 		font-weight: 400;
 		cursor: pointer;
+		@include transition(.5s);
 		
 		&:hover {
 			background: $main-menu-hover;

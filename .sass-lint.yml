@@ -11,16 +11,6 @@ rules:
       clean-import-paths: 2
   extends-before-declarations: 2
   extends-before-mixins: 2
-  final-newline: 2
-  indentation:
-    - 2
-    -
-      size: 4
-  leading-zero:
-    - 2
-    -
-      include: true
-  no-css-comments: 1
   no-debug: 1
   no-empty-rulesets: 2
   no-ids: 1
@@ -32,14 +22,7 @@ rules:
       extra-properties:
         - 'touch-callout'
         - 'overflow-scrolling'
-  no-vendor-prefixes: 1
   no-warn: 1
   one-declaration-per-line: 2
   single-line-per-selector: 2
-  space-after-colon: 2
-  space-after-comma: 2
-  space-around-operator: 2
-  space-before-bang: 2
-  space-before-brace: 2
   trailing-semicolon: 2
-  zero-unit: 2

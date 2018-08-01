@@ -30,7 +30,7 @@
 
 	&--wrapper {
 		border: 1px solid #777;
-		box-shadow: #777 5px 5px;
+		@include base-box-shadow();
 	}
 
 	&--half {
